@@ -57,7 +57,6 @@ export function App() {
       </nav>
 
       <Content 
-        titleSelectedGenre={selectedGenre.title} 
         selectedGenreId={selectedGenreId} 
       />
     </div>

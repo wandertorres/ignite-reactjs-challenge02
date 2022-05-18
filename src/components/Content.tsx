@@ -3,7 +3,6 @@ import { api } from "../services/api";
 import { MovieCard } from "./MovieCard";
 
 interface ContentProps {
-  titleSelectedGenre: string
   selectedGenreId: number
 }
 
@@ -18,7 +17,7 @@ interface MovieProps {
   Runtime: string;
 }
 
-export function Content({ titleSelectedGenre, selectedGenreId }: ContentProps) {
+export function Content({ selectedGenreId }: ContentProps) {
   const [movies, setMovies] = useState<MovieProps[]>([]);
 
   useEffect(() => {
